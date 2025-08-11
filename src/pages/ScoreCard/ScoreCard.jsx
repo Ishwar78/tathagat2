@@ -162,7 +162,7 @@ const testimonials = [
     stars: 5,
   },
    {
-    name: 'Rohit Sharma',
+    name: 'Gourav Sharma',
     score: 'CAT 99.8%ile',
     image: successtwo, 
     message: 'I studied at TathaGat back in 2014. TG exceeded my expectations...',
@@ -170,7 +170,7 @@ const testimonials = [
     stars: 5,
   },
    {
-    name: ' Guneet Singh',
+    name: 'Gourav Sharma',
     score: 'CAT 99.8%ile',
     image: successtwo, 
     message: 'I studied at TathaGat back in 2014. TG exceeded my expectations...',
