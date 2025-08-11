@@ -1351,7 +1351,86 @@
     font-size: 14px;
   }
 .tt-team-heading h2 {
-  font-size:18px;
+  font-size:28px;
+ 
+}
+  .ta-arrow-button {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .ta-view-all-button button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .ta-Blog-Footer-Main {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ta-blog-slider-wrapper {
+    padding: 30px 20px;
+  }
+
+  .ta-blog-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .ta-blog-header h2 {
+    font-size: 32px;
+  }
+
+  .ta-blog-header p {
+    font-size: 14px;
+    max-width: 100%;
+    margin-top: 8px;
+  }
+
+  /* Make filter buttons horizontally scrollable */
+  .ta-blog-filter-buttons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+
+  .ta-blog-filter-buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ta-blog-filter-buttons button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  .ta-blog-card {
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .ta-blog-image {
+    height: 160px;
+  }
+
+  .ta-blog-info {
+    padding: 12px;
+    gap: 6px;
+  }
+
+  .ta-blog-info h4 {
+    font-size: 14px;
+  }
+.tt-team-heading h2 {
+  font-size:28px;
  
 }
   .ta-arrow-button {
