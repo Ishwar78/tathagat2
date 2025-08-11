@@ -62,8 +62,8 @@ const OurBlogs = () => {
   const [index, setIndex] = useState(0);
   const navigate = useNavigate();
 
-  const next = () => setIndex((index + 1) % teamImages.length);
-  const prev = () => setIndex((index - 1 + teamImages.length) % teamImages.length);
+  // const next = () => setIndex((index + 1) % teamImages.length);
+  // const prev = () => setIndex((index - 1 + teamImages.length) % teamImages.length);
 
   return (
     <div>
