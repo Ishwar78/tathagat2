@@ -1,0 +1,38 @@
+# Dependencies & builds
+node_modules/
+dist/
+build/
+.cache/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Editor/system
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archives & binaries
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.exe
+*.apk
+
+# Project-specific
+Frontend.rar
+components.zip
+.config/
+
