@@ -151,7 +151,7 @@ const WhySection = () => {
             <div className="wt-scroll-column">
               <div className="wt-scroll-wrapper">
                 {leftCards.map((card, index) => (
-                  <div className={`wt-header-card ${card.styleClass}} key={index`}>
+                  <div className={`wt-header-card ${card.styleClass}`} key={index}>
                     {card.title && <h3 className="wt-card-title">{card.title}</h3>}
                     {card.desc && <p className="wt-card-desc">{card.desc}</p>}
 
@@ -242,7 +242,7 @@ const WhySection = () => {
               <div className="wt-scroll-wrapper">
                 {rightCards.map((card, index) =>
                   card.title !== "Important Note" ? (
-                    <div className={`wt-header-card ${card.styleClass}} key={index`}>
+                    <div className={`wt-header-card ${card.styleClass}`} key={index}>
                       {card.title && <h3 className="wt-card-title">{card.title}</h3>}
                       {card.desc && <p className="wt-card-desc">{card.desc}</p>}
                       {card.img && (
