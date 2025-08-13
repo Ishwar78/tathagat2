@@ -198,7 +198,7 @@
   background-color: #f9b800;
   border-radius: 20px;
   width: 380px;
-  height: 650px;
+  height: 580px;
   padding: 10px;
   padding-bottom: 0%;
 }
@@ -226,7 +226,7 @@
   text-align: left;
 }
 .rajat-content p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     font-family: "Manrope",sans-serif;
     color: #fff;
@@ -236,7 +236,7 @@
 .rajat-side-faces {
   display: flex;
   width:320px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .rajat-side-faces img {
@@ -250,7 +250,7 @@
     /* margin-left: 470px; */
     position: relative;
     left: 470px;
-    top: -200px;
+    top: -230px;
 
 }
 
@@ -275,15 +275,32 @@
 }
 
 .testimonial-track img {
-  height: 180px;
-  border-radius: 10px;
+  height: 100px;
+  border-radius: 5px;
 }
 
+.tgv-rjt-button {
+  background-color: #ee6a4d;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  /* padding: 12px 20px; */
+  border: none;
+  border-radius: 8px;
+  /* margin-bottom: 40px; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px;white-space: nowrap;
+}
 
+.tgv-rjt-button:hover {
+  background-color: #d55439;
+}
 .tt-testimonial-item{
     border: 1px solid #FFC107;
     background-color: #FFC107;
-    padding: 10px 15px;
+    padding: 20px 8px 8px 8px;
     border-radius: 12px;
 }
 /* Auto-scroll animation */

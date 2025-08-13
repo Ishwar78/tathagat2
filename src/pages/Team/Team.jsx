@@ -164,6 +164,7 @@ const demoRef = useRef(null);
             excellence, he continues to inspire students to aim higher and achieve the best in their
             careers.
           </p>
+          <button className="tgv-rjt-button">Book Free Counselling</button>
         </div>
         <div className="rajat-side-faces">
           < LazyLoadImage effect='blur' src={kumar} alt="Kumar Abhishek" />

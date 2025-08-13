@@ -91,7 +91,7 @@ body {
 
 .m-buttons {
   display: grid;
-  grid-template-columns:160px 160px; 
+  grid-template-columns:200px 220px; 
   justify-content: center;
   gap: 12px 8px;
   margin-left: -155px;

@@ -65,7 +65,7 @@ import R8 from "../../images/Review/R8.PNG"
 import R9 from "../../images/Review/R9.PNG"
 import R10 from "../../images/Review/R10.PNG"
 
-
+import ExploreBlog from "../../components/ExploreBlog/ExploreBlog";
 
 
 
@@ -443,7 +443,7 @@ const AboutUs = () => {
 
 
 
-<section className="ta-blog-slider-wrapper">
+{/* <section className="ta-blog-slider-wrapper">
         <div className="ta-blog-header">
           <div>
             <p className="ta-headerBlog">Explore our blog</p>
@@ -508,9 +508,9 @@ const AboutUs = () => {
             <button>View all</button>
           </div>
         </div>
-      </section>
+      </section> */}
 
-
+   <ExploreBlog />
 
 
 

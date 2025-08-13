@@ -476,10 +476,10 @@ body {
   }
 } */
 @media (min-width: 768px) {
-  .tcp-timeline-wrapper {
-    /* padding: 60px 40px; */
+  /* .tcp-timeline-wrapper {
+  
      display: none !important;
-  }
+  } */
 
   .tcp-timeline-row {
     flex-direction: row;
