@@ -1,6 +1,6 @@
 /* ===== SUCCESS STORY SECTION ===== */
 .success-container {
-  padding: 20px 10px;
+  padding: 20px 60px;
   max-width: 1400px;
   margin: 0 auto;
   font-family: "Arial", sans-serif;
@@ -35,7 +35,7 @@
 }
 
 .text-section h2 {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 600;
   margin: 10px 0 20px;
   color: #000;
@@ -118,6 +118,7 @@
   font-family: "DM Serif Display", serif;
   text-align: left;
   margin-bottom: 10px;
+  margin-left: -45px;
 }
 
 .ts-achievers-subtitle {
@@ -128,18 +129,20 @@
   text-align: left;
   line-height: 1.4;
   word-break: break-word;
+    margin-left: -45px;
 }
 
 .ts-view-all-btn {
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  background-color: #121850;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+background-color: white;
+    color: #f45e4b;
+    padding: 6px 14px;
+    border: 1px solid #f45e4b;
+    font-weight: 700;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 90px;
+    margin-right: 30px;
+    cursor: pointer;
 }
 
 .ts-view-all-btn:hover {
@@ -611,6 +614,7 @@
   color: #000;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-top: 70px;
   font-family: 'DM Serif Display', serif;
   text-align: left;
    /* white-space: normal;           

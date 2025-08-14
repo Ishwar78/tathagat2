@@ -127,14 +127,35 @@ const navigate=useNavigate()
      <div className="tf-section-wrapper">
       {/* Left: Form */}
       <div className="tf-form-box">
-        <h2 className="tf-form-title">Still have a question?</h2>
-        <form className="tf-form">
-          <input type="text" placeholder="Your Name" className="tf-input" />
-          <input type="email" placeholder="Email Address" className="tf-input" />
-          <textarea placeholder="Type your question here..." className="tf-textarea" />
-          <button type="submit" onClick={()=>alert("Your question has been submitted!")} className="tf-submit-btn">Submit Your Question</button>
-        </form>
-      </div>
+  <h2 className="tf-form-title">Still have a question?</h2>
+  <form className="tf-form">
+    <input
+      type="text"
+      placeholder="Your Name"
+      className="tf-input"
+      required
+    />
+    <input
+      type="email"
+      placeholder="Email Address"
+      className="tf-input"
+      required
+    />
+    <textarea
+      placeholder="Type your question here..."
+      className="tf-textarea"
+      required
+    />
+    <button
+      type="submit"
+      onClick={() => alert("Your question has been submitted!")}
+      className="tf-submit-btn"
+    >
+      Submit Your Question
+    </button>
+  </form>
+</div>
+
 
       {/* Right: Telegram Box */}
       <div className="tf-telegram-box" style={{ backgroundImage: `url(${faqImage})` }}>
