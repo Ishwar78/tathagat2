@@ -40,6 +40,11 @@ export default function Header() {
       <Facebook className="social-icon-white" />
     </div>
   </Link>
+   {/* <Link to="/faq">
+    <div className="icon-circle facebook-bg">
+      <Telegram className="social-icon-white" />
+    </div>
+  </Link> */}
 </div>
 
 

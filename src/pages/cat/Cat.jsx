@@ -306,7 +306,6 @@ const Cat = () => {
     ],
     quant: [
       { id: 1, title: "Time & Work in 5 Minutes", author: "Ayush Kumar", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
-      { id: 2, title: "Speed & Distance Basics", author: "Rahul Sharma", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
     ],
     varc: [
       { id: 3, title: "Reading Comprehension", author: "Anjali Singh", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },

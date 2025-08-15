@@ -43,7 +43,7 @@ const SuccessStory = () => {
 
   const testimonials = [
     {
-      name: "Rohit Sharma",
+      name: "Gourav Sharma",
       score: "CAT 99.8%ile",
       image: successtwo,
       message:
@@ -52,7 +52,7 @@ const SuccessStory = () => {
       stars: 5,
     },
     {
-      name: "Ananya Verma",
+      name: "Pranjal Malhotra",
       score: "CAT 99.6%ile",
       image: successthree,
       message: "The study materials were comprehensive and well-structured...",
@@ -60,7 +60,7 @@ const SuccessStory = () => {
       stars: 5,
     },
     {
-      name: "Vikram Mehta",
+      name: "Shivam Sharma",
       score: "CAT 99.7%ile",
       image: successfour,
       message: "Faculty were exceptionally knowledgeable and experienced...",
@@ -68,7 +68,7 @@ const SuccessStory = () => {
       stars: 5,
     },
     {
-      name: "Vikram Mehta",
+      name: "Amit Raj",
       score: "CAT 99.7%ile",
       image: successfive,
       message: "Faculty were exceptionally knowledgeable and experienced...",
@@ -76,7 +76,7 @@ const SuccessStory = () => {
       stars: 5,
     },
     {
-      name: "Rohit Sharma",
+      name: "Gourav Sharma",
       score: "CAT 99.8%ile",
       image: successtwo,
       message:
@@ -85,7 +85,7 @@ const SuccessStory = () => {
       stars: 5,
     },
     {
-      name: "Rohit Sharma",
+      name: "Gourav Sharma",
       score: "CAT 99.8%ile",
       image: successtwo,
       message:

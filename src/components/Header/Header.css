@@ -13,7 +13,7 @@
 
 /* Container - three columns layout */
 .top-bar-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -21,6 +21,7 @@
   justify-content: space-between;
   font-size: 14px;
   padding: 0 20px;
+  height: 20px;
 }
 
 /* Contact left - flex with separator */
@@ -225,7 +226,7 @@
 
 /* Nav container - exact copy of container mx-auto px-4 */
 .nav-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -278,6 +279,7 @@
   display: none;
   align-items: center;
   gap: 32px;
+  margin-left: 15px;
 
   
 }
