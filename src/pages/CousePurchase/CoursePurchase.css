@@ -33,7 +33,7 @@
   /* LEFT SECTION */
   .left-sections {
     flex:  70%;
-    padding-left: 0px;
+    padding-left: 50px;
   }
   
   .video-banners iframe {

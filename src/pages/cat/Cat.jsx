@@ -294,6 +294,29 @@ const Cat = () => {
   const [showAll, setShowAll] = useState(false);
 
   const visibleCourses = showAll ? programs : programs.slice(0, 2);
+
+
+
+   const videosData = {
+    all: [
+      { id: 1, title: "Time & Work in 5 Minutes", author: "Ayush Kumar", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+      { id: 2, title: "Speed & Distance Basics", author: "Rahul Sharma", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+      { id: 3, title: "Reading Comprehension", author: "Anjali Singh", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+      { id: 4, title: "DI Table Questions", author: "Amit Kumar", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+    ],
+    quant: [
+      { id: 1, title: "Time & Work in 5 Minutes", author: "Ayush Kumar", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+      { id: 2, title: "Speed & Distance Basics", author: "Rahul Sharma", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+    ],
+    varc: [
+      { id: 3, title: "Reading Comprehension", author: "Anjali Singh", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+    ],
+    lrdi: [
+      { id: 4, title: "DI Table Questions", author: "Amit Kumar", url: "https://www.youtube.com/embed/1x9lbk01Tn4" },
+    ],
+  };
+
+  const [category, setCategory] = useState("all");
   return (
     <div>
       <>
@@ -476,7 +499,7 @@ const Cat = () => {
 
           </div>
         </section>
-
+{/* 
         <section className="tgr-classroom">
           <div className="tgr-container">
             <h2 className="tgr-heading">
@@ -529,7 +552,67 @@ const Cat = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
+          <section className="tgr-classroom">
+      <div className="tgr-container">
+        <h2 className="tgr-heading">
+          Real classroom energy. Real concept clarity.
+        </h2>
+        <p className="tgr-subtext">
+          Before you join us, see how we teach. Watch demo clips from our
+          top faculty as they break down concepts, share strategies, and make learning engaging and effective.
+        </p>
+
+        {/* Filter Buttons */}
+        <div className="tgr-filters">
+          <button className={`tgr-btn ${category === "all" ? "tgr-active" : ""}`} onClick={() => setCategory("all")}>
+            All Categories
+          </button>
+          <button className={`tgr-btn ${category === "quant" ? "tgr-active" : ""}`} onClick={() => setCategory("quant")}>
+            QUANT
+          </button>
+          <button className={`tgr-btn ${category === "varc" ? "tgr-active" : ""}`} onClick={() => setCategory("varc")}>
+            VARC
+          </button>
+          <button className={`tgr-btn ${category === "lrdi" ? "tgr-active" : ""}`} onClick={() => setCategory("lrdi")}>
+            LRDI
+          </button>
+        </div>
+
+        {/* Video Grid */}
+        <div className="tgr-video-grid">
+          {videosData[category].map((video) => (
+            <div className="tgr-video-card" key={video.id}>
+              <div className="tgr-video-thumbnail">
+                <iframe
+                  width="100%"
+                  height="200"
+                  src={video.url}
+                  title={video.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="tgr-yt-frame"
+                ></iframe>
+              </div>
+              <div className="tgr-video-info">
+                <p className="tgr-video-label">Watch Video</p>
+                <h4 className="tgr-video-title">{video.title}</h4>
+                <p className="tgr-video-author">By {video.author}</p>
+                <a
+                  className="tgr-watch-link"
+                  href={video.url.replace("embed/", "watch?v=")}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Watch Now →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
         <section className="tgc-score">
           <div className="tgc-container">
@@ -549,7 +632,7 @@ const Cat = () => {
             </div>
 
             {/* Right Topper Cards */}
-            <div className="tgc-toppers">
+            {/* <div className="tgc-toppers">
               {[
                 {
                   name: "Harshit Bhalla",
@@ -580,7 +663,24 @@ const Cat = () => {
                   <p className="tgc-score-text">{student.score}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
+            <div className="tgc-toppers">
+  {[
+    { name: "Harshit Bhalla", score: "99.83 %ILE", img: image1 },
+    { name: "Raghav Garg",   score: "99.33 %ILE", img: image3 },
+    { name: "Sanjana Singh", score: "99.32 %ILE", img: image6 },
+    { name: "Arav Jain",     score: "99.2 %ILE",  img: image5 },
+  ].map((s, i) => (
+    <div className="tgc-topper-card" key={i}>
+      <div className="tgc-photo">
+        <LazyLoadImage src={s.img} alt={s.name} />
+        <div className="tgc-overlay">{s.name}</div>
+      </div>
+      <p className="tgc-score-text">{s.score}</p>
+    </div>
+  ))}
+</div>
+
           </div>
         </section>
 
@@ -592,6 +692,7 @@ const Cat = () => {
                 display: "flex",
                 flexDirection: "column",
                 textAlign: "left",
+                    marginBottom: "-60px",
               }}
             >
               <h5>our Courses</h5>
@@ -609,11 +710,11 @@ const Cat = () => {
           </div>
 
           <div className="tspp-programs-actions">
-            <button>
+            {/* <button>
               <i className="fa fa-filter"></i> Cat
-            </button>
+            </button> */}
             <button>
-              <i className="fa fa-filter"></i> Year
+              <i className="fa fa-filter"></i> filter
             </button>
             <button>
               <i className="fa fa-balance-scale"></i> Course Comparison
@@ -651,7 +752,7 @@ const Cat = () => {
 
           {!showAll && (
             <div className="tspp-show-all-button">
-              <button onClick={() => setShowAll(true)}>Show All</button>
+              <button onClick={() => setShowAll(true)}>View All</button>
             </div>
           )}
         </section>
